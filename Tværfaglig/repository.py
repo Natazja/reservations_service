@@ -1,5 +1,5 @@
 # repository.py
-from models import db, Reservation
+from models import db, Reservation, RoomReservation
 
 class ReservationRepository:
     @staticmethod
@@ -23,3 +23,14 @@ class ReservationRepository:
     def delete(reservation):
         db.session.delete(reservation)
         db.session.commit()
+
+class RoomReservationRepository:
+    @staticmethod
+    def add(room_reservation):
+        db.session.add(room_reservation)
+        db.session.commit()
+
+    @staticmethod
+    def get_by_reservation_id(reservation_id):
+        return RoomReservation.query.filter_by(reservation_id=reservation_id).all()
+
