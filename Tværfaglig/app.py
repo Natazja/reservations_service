@@ -5,8 +5,6 @@ from models import db, Reservation, RoomReservation
 from repository import ReservationRepository, RoomReservationRepository
 
 app = Flask(__name__)
-app.config.from_object(Config)
-db.init_app(app)
 
 @app.before_first_request
 def create_tables():
