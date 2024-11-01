@@ -33,8 +33,9 @@ The project uses Docker for containerization and SQLite for data storage.
    docker build -t reservation-microservice .
 
 3. **Environment Variables**:
-  FLASK_ENV: Set to production to run the app in production mode.
-  FLASK_APP: Set to app.py to specify the entry point of the Flask application.
+
+FLASK_ENV: Set to production to run the app in production mode.
+FLASK_APP: Set to app.py to specify the entry point of the Flask application.
 
 
 ## Usage
