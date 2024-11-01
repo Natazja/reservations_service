@@ -2,6 +2,7 @@
 
 The Reservation Service manages reservation-related operations. It is a microservice designed to work independently or as part of a larger application. This service is built using Flask and Docker, with data stored in a SQLite database.
 
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -10,6 +11,7 @@ The Reservation Service manages reservation-related operations. It is a microser
 - [API Endpoints](#api-endpoints)
 - [Database Initialization](#database-initialization)
 - [Running the Service](#running-the-service)
+
 
 ## Installation
 
@@ -49,7 +51,7 @@ FLASK_APP: Set to app.py to specify the entry point of the Flask application.
 ## API Endpoints
 The following endpoints are available in the Reservation Service:
 
-# CRUD Operations for Reservations
+### CRUD Operations for Reservations
 **GET /reservations**
 Retrieve all reservations.
 
